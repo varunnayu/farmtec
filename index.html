@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="sub.css">
+  <link rel="stylesheet" href="team.css">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Farom<span>Tech</span></h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="user.html">Login</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to FarmoTech</h2>
+      <p>Where a tech is involved in farming and a great advice will starts here.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="section about-us">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>At <strong>My Company</strong>, we believe in delivering excellence. Founded in 2010, we have been at the forefront of innovation, providing cutting-edge solutions to businesses worldwide.</p>
+      <p>Our mission is to empower companies of all sizes with tools that enhance efficiency, foster growth, and provide measurable results. We pride ourselves on our customer-centric approach, ensuring that every solution we provide is tailored to the unique needs of our clients.</p>
+      <p>With a team of highly skilled professionals, we combine technology and creativity to bring transformative change to industries ranging from healthcare to finance, retail, and more.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://via.placeholder.com/400x300" alt="Company Team">
+    </div>
+  </section>
+  
+<!-- Chatbot Icon (Initially visible) -->
+<div class="chatbot-icon" id="chatbot-icon" onclick="toggleChatbot()">
+    <span>💬</span> <!-- Chat bubble icon -->
+  </div>
+  
+  <!-- Chatbot Widget (Initially hidden) -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <span class="chatbot-title">Chat with Us!</span>
+      <button class="chatbot-close-btn" onclick="toggleChatbot()">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Chat messages will appear here -->
+    </div>
+    <div class="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." />
+      <button class="chatbot-send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  
+
+  <!-- Services Section -->
+<section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service-item">
+        <h3>Consulting</h3>
+        <p>We provide expert consulting services to help your business navigate challenges and achieve sustainable growth. Our team offers strategic insights tailored to your unique needs.</p>
+      </div>
+      <div class="service-item">
+        <h3>Software Development</h3>
+        <p>Our experienced developers create custom software solutions that streamline processes, improve efficiency, and boost productivity for businesses of all sizes.</p>
+      </div>
+      <div class="service-item">
+        <h3>Digital Marketing</h3>
+        <p>We offer a full range of digital marketing services to help you reach your target audience, build brand awareness, and drive traffic to your business through various online platforms.</p>
+      </div>
+      <div class="service-item">
+        <h3>Design & Branding</h3>
+        <p>Our creative team helps build strong, memorable brands through professional design services that communicate your business's message clearly and effectively.</p>
+      </div>
+    </div>
+</section>
+
+<!--pricing table-->
+<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+   <div class="wrapper">
+       <div class="table Premium">
+           <div class="price-section">
+               <div class="price-area">
+                   <div class="inner-area">
+                       <span class="text">
+                         &#8377;
+                       </span>
+                       <span class="price">49</span>
+                   </div>
+               </div>
+           </div>
+           <div class="package-name">
+            
+           </div>
+           <div class="features">
+               <li>
+                   <span class="list-name">Five Existing Template</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">100% Responsive Design</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">Credit Remove Permission</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">Lifetime Template Updates</span>
+                   <span class="icon cross"><i class="far fa-times-circle"></i></span>
+               </li>
+               <div class="btn"><button>Purchase</button></div>
+           </div>
+       </div>
+       <div class="table Ultimate">
+           <div class="price-section">
+               <div class="price-area">
+                   <div class="inner-area">
+                       <span class="text">
+                          &#8377;
+                       </span>
+                       <span class="price">99</span>
+                   </div>
+               </div>
+           </div>
+           <div class="package-name">
+               
+           </div>
+           <div class="features">
+               <li>
+                   <span class="list-name">All Existing Template</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">100% Responsive Design</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">Credit Remove Permission</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <li>
+                   <span class="list-name">Lifetime Template Updates</span>
+                   <span class="icon check"><i class="fas fa-check-circle"></i></span>
+               </li>
+               <div class="btn"><button>Purchase</button></div>
+           </div>
+       </div>
+   </div>
+
+<!--team-->
+<div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <p class="text-blk section-head-text">
+        Meet Our Expert Instructors
+      </p>
+      <p class="text-blk section-subhead-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="img/profile.jpg">
+            </div>
+            <p class="text-blk name">
+              Varun 
+            </p>
+            <p class="text-blk position">
+              Developer
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="img/gagan.jpg">
+            </div>
+            <p class="text-blk name">
+              Gagan
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="img/gagan.jpg">
+            </div>
+            <p class="text-blk name">
+              Sumith
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Subscription Box -->
+    <div class="subscription-box">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter to get the latest updates on our services and offers!</p>
+        <form action="#" method="POST" class="subscription-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2024 FarmoTech. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="social-links">
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

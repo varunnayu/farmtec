@@ -1,0 +1,153 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3a7e37;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.navbar .logo{
+  margin-left: 40px;
+}
+.navbar .logo h1 {
+  font-size: 24px;
+  margin-right: 40px;
+}
+.navbar .logo span{
+    color: #333;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger span {
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('img/bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 92vh; /* Make hero take full viewport height */
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #2e2e2e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.hero-content{
+    text-align: center;
+    margin-top: 250px;
+}
+
+/* General Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+  }
+  .navbar .logo{
+    margin-left: 0px;
+  }
+  .navbar .hamburger {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .nav-links.active li {
+    margin: 10px 0;
+  }
+
+  .hero{
+    background-image: url('img/phonebg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .hero h2 {
+    font-size: 28px;
+  }
+  .hero-content  {
+    margin-top: 140px
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
